@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@300;400&display=swap");
+:root {
+  --large-font-size: 24px;
+  --small-font-size: 14px;
+  --medium-font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}

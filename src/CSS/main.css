@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+:root {
+  --large-font-size: 24px;
+  --small-font-size: 14px;
+  --medium-font-size: 18px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: #fcffa6;
+}
+.mainNav {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainNavOptions {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  font-family: "Poppins", serif;
+  font-size: var(--medium-font-size);
+  background: #fff;
+  height: 50px;
+}
+.mainNavOptions > a {
+  text-decoration: none !important;
+  color: #000;
+}
+.mainNavOptions > p {
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-left: 1px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.mainNavOptions > p:hover {
+  border-bottom: 3px solid #39bdae;
+  transition: 250ms;
+}
+.active {
+  border: 2.5px solid #39bdae;
+  color: #15aba4;
+}
+.mainSearch {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-family: "Poppins", serif;
+  font-size: var(--medium-font-size);
+  background: #fff;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+.mainSearch > input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: "Poppins", serif;
+}
+.mainSearch > i {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+}
+.productsDiv {
+  width: 100%;
+  place-items: center;
+  place-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.itemCardDiv {
+  width: 350px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.itemCardDiv > h3,
+small,
+h4 {
+  font-family: "Poppins", serif;
+}
+.itemCardDiv > p {
+  font-family: "Raleway", serif;
+  color: grey !important;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+}
+.itemCardDiv > img {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+.itemsDiv > h4 {
+  background: #fcffa6;
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #6f69ac;
+  position: absolute;
+  text-align: left !important;
+}
+.itemCardDiv > small {
+  background: rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 12px;
+  color: #6f69ac;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.itemCardDiv > h3 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  margin-bottom: 2px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.options {
+  width: 100%;
+}
+.optionSubDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.subOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 80px;
+  background: transparent;
+  margin-left: 1px;
+  height: 60px;
+}
+.subOptions:hover {
+  border: 2px solid #6f69ac;
+  transition: 250ms;
+}
+.subOptions > i {
+  font-size: 1.2rem;
+  color: #6f69ac;
+
+  margin-top: 10px;
+}
+.subOptions > small {
+  margin-top: 5px;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+}
+.navBar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: fixed;
+  z-index: 99;
+}
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navLogo > img {
+  width: 40px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+.navLogo > #secondLogo {
+  margin-left: 5px;
+}
+.navLogo > h1 {
+  font-family: "Raleway", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .mainNavOptions {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    font-size: var(--small-font-size);
+    height: 50px;
+  }
+  .mainNavOptions > p {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 1px;
+    box-shadow: none;
+  }
+  .mainNavOptions > p:hover {
+    border-bottom: 3px solid #39bdae;
+    transition: 250ms;
+  }
+  .active {
+    border: 2.5px solid #39bdae;
+    color: #15aba4;
+  }
+  .mainSearch {
+    display: flex;
+    width: 100%;
+    font-size: var(--small-font-size);
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  }
+  .productsDiv {
+    grid-template-columns: repeat(1, 100%);
+    grid-row-gap: 30px;
+  }
+  .itemCardDiv {
+    width: 350px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .itemCardDiv > h3,
+  small,
+  h4 {
+    font-family: "Poppins", serif;
+  }
+  .itemCardDiv > p {
+    font-family: "Raleway", serif;
+    color: grey !important;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+  }
+  .itemCardDiv > img {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+  }
+  .itemsDiv > h4 {
+    background: #fcffa6;
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #6f69ac;
+    position: absolute;
+    text-align: left !important;
+  }
+  .itemCardDiv > small {
+    background: rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+    color: #6f69ac;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .itemCardDiv > h3 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .options {
+    width: 100%;
+  }
+  .optionSubDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .subOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 80px;
+    background: transparent;
+    margin-left: 1px;
+    height: 60px;
+  }
+  .subOptions:hover {
+    border: 2px solid #6f69ac;
+    transition: 250ms;
+  }
+  .subOptions > i {
+    font-size: 1.2rem;
+    color: #6f69ac;
+
+    margin-top: 10px;
+  }
+  .subOptions > small {
+    margin-top: 5px;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+  }
+  .navBar {
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+  .navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navLogo > img {
+    width: 30px;
+    object-fit: contain;
+    margin-right: 5px;
+  }
+  .navLogo > #secondLogo {
+    margin-left: 5px;
+  }
+  .navLogo > h1 {
+    font-family: "Raleway", serif;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
