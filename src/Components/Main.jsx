@@ -91,7 +91,11 @@ const Main = () => {
 
                             <p className={option3 ? 'active' : 'deActive'} onClick={handleActive3}>Dinner</p>
                         </div>
-                        
+                         <div className="mainSearch" id='mainSearchd-noneDesktop'>
+                            <input type="text" onChange={e => setText(e.target.value)}
+                                placeholder='Search items here'/>
+                            <i className="fas fa-search"></i>
+                        </div>
                     </div>
                     
                 </div>
