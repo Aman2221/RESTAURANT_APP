@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+<img src='https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vw746q22dz0r1cb9hr6w.png' alt='Landing page' />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
